@@ -16,35 +16,35 @@ html {
 }
 
 .app {
-  @apply flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6 ;
+  @apply flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 md:px-8 px-4;
 }
 
 .desc {
-  @apply mt-4 text-lg text-gray-500  ml-20 sm:text-xl max-w-4xl text-center;
+  @apply mt-4 text-lg text-gray-500 ml-4 sm:ml-20 sm:text-xl max-w-4xl text-center;
 }
 
 .violet_gradient {
-  @apply bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 bg-clip-text text-transparent mt-4 sm:mt-8 text-center;
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-3xl sm:text-5xl font-extrabold leading-[1.15] text-black text-center;
 }
 
 .logo_text {
-  @apply font-satoshi font-semibold text-2xl tracking-wide py-5 text-gray-800 max-sm:hidden ;
+  @apply font-satoshi font-semibold text-xl text-black sm:text-2xl tracking-wide py-2 sm:py-5 text-gray-800 hidden sm:block ;
 }
 
 .get_started{
-  @apply bg-white text-black font-semibold mt-4 px-16 py-4 shadow-lg shadow-violet-500 rounded-xl hover:bg-violet-500;
+  @apply bg-white text-black font-semibold mt-4 px-8 py-2 sm:px-16 sm:py-4 shadow-lg shadow-violet-500 rounded-xl hover:bg-violet-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-violet-500;
 }
 
 .sign_io{
-  @apply bg-gradient-to-r from-purple-600 to-indigo-500 text-white font-semibold py-3 px-10 rounded-3xl transition hover:shadow-violet-500 shadow-lg; 
+  @apply bg-gradient-to-r from-purple-600 to-indigo-500 text-white font-semibold py-2 px-6 sm:py-3 sm:px-10 rounded-3xl transition hover:shadow-violet-500 shadow-lg; 
 }
 
 .flex-between {
-  @apply flex justify-between items-center;
+  @apply flex flex-col sm:flex-row justify-center items-center;
 }
 
 .welcome_text {
@@ -53,11 +53,11 @@ html {
 
 
 .create_task{
-  @apply bg-white shadow-lg shadow-violet-300 rounded-xl px-24 py-2 mb-12 text-black caret-transparent hover:bg-violet-500;
+  @apply bg-white shadow-lg shadow-violet-300 rounded-xl font-semibold mb-6 sm:px-16 sm:py-4 sm:mb-12 text-black caret-transparent hover:bg-violet-500;
 }
 
 .back{
-  @apply text-violet-500 no-underline caret-transparent font-semibold cursor-pointer text-2xl py-2 px-4 hover:text-black;
+  @apply text-violet-500 no-underline caret-transparent font-semibold cursor-pointer text-xl sm:text-2xl py-2 px-4 hover:text-black;
 }
 
 

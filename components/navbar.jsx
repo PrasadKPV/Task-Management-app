@@ -18,8 +18,8 @@ const Navbar = () => {
         })();
     }, []);
     return(
-        <nav className='flex-between w-full mb-8 pt-2'>
-            <Link href="/" className='flex gap-2 flex-center'>
+        <nav className='w-full mb-4 sm:flex justify-between items-center pt-2'>
+            <Link href="/" className='flex gap-1 items-center justify-center w-20 h-20 sm:w-24 sm:h-24'>
                 <Image
                     src='/assests/logo.png'
                     alt="Task Wave logo"
@@ -27,11 +27,11 @@ const Navbar = () => {
                     height={80}
                     className="object-contain" 
                 />
-                <p className="logo_text">Task Wave</p>
+                <p className="logo_text whitespace-nowrap">Task Wave</p>
             </Link>
-            <div>
+            <div  className='flex gap-3 md:gap-5 flex-col sm:flex-row items-center justify-center '>
                 {session?.user ? (
-                    <div className='flex gap-3 md:gap-5'>
+                    <div>
                         {/* Sign out button */}
                         <button type='button' onClick={signOut} className='sign_io'>
                             Sign Out
