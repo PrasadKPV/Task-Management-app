@@ -12,9 +12,6 @@ const Rootlayout = ({children}) =>(
     <head> <link rel="icon" href="assests/logo.ico" sizes="any" /></head>
     <body>
       <Provider>
-          <div className='main'>
-            <div className='gradient' />
-          </div>
         <main className="app">
           <Navbar/>
           {children}

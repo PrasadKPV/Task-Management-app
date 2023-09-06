@@ -5,7 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { signIn ,signOut , getProviders ,useSession} from 'next-auth/react';
 
-const Navbar = ({onCreateTaskClick}) => {
+
+const Navbar = () => {
     const { data : session } = useSession();
 
     const [providers, setProviders] = useState(null);
@@ -28,7 +29,7 @@ const Navbar = ({onCreateTaskClick}) => {
                 />
                 <p className="logo_text">Task Wave</p>
             </Link>
-            <div className='sm:flex hidden'>
+            <div>
                 {session?.user ? (
                     <div className='flex gap-3 md:gap-5'>
                         {/* Sign out button */}

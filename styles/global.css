@@ -4,54 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
-}
 
 *{
   margin:0px;
   padding : 0px;
   box-sizing: border-box;
 }
-.main {
-  width: 100vw;
-  min-height: 100vh;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  padding: 80px 20px 80px 20px;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
-  position: absolute;
-  content: "";
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-
-.main:after {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  filter: invert(1);
-}
-
-@media screen and (max-width: 640px) {
-  .main {
-    padding: 0;
-  }
+.app {
+  @apply flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6 ;
 }
 
 .desc {
-  @apply mt-6 text-lg text-gray-500 sm:text-xl max-w-4xl text-center ml-40;
+  @apply mt-4 text-lg text-gray-500  ml-20 sm:text-xl max-w-4xl text-center;
 }
 
 .violet_gradient {
@@ -63,15 +32,15 @@
 }
 
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-2xl tracking-wide py-5 text-gray-800;
+  @apply font-satoshi font-semibold text-2xl tracking-wide py-5 text-gray-800 max-sm:hidden ;
 }
 
 .get_started{
-  @apply bg-black text-white font-semibold px-8 py-4 rounded-xl hover:bg-opacity-80;
+  @apply bg-white text-black font-semibold mt-4 px-16 py-4 shadow-lg shadow-violet-500 rounded-xl hover:bg-violet-500;
 }
 
 .sign_io{
-  @apply bg-violet-700 text-white font-semibold py-2 px-8 rounded-xl transition hover:bg-opacity-80; 
+  @apply bg-gradient-to-r from-purple-600 to-indigo-500 text-white font-semibold py-3 px-10 rounded-3xl transition hover:shadow-violet-500 shadow-lg; 
 }
 
 .flex-between {
@@ -79,10 +48,18 @@
 }
 
 .welcome_text {
-  @apply text-xl font-semibold text-black mt-16 pt-16 sm:text-6xl;
+  @apply text-lg font-semibold text-black caret-transparent sm:text-6xl ;
 }
 
 
-.back,.create_task{
-  @apply bg-violet-700 text-white font-semibold py-2 px-16 flex justify-center items-center rounded-xl transition hover:bg-opacity-80; 
+.create_task{
+  @apply bg-white shadow-lg shadow-violet-300 rounded-xl px-24 py-2 mb-12 text-black caret-transparent hover:bg-violet-500;
 }
+
+.back{
+  @apply text-violet-500 no-underline caret-transparent font-semibold cursor-pointer text-2xl py-2 px-4 hover:text-black;
+}
+
+
+
+
